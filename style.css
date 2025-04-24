@@ -1,10 +1,12 @@
 @font-face {
-    font-family: 'San Frnancisco';
-    src: url('./font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+    font-family: 'San Francisco';
+    src: url('/font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-    font-family: 'San Frnancisco', Arial, sans-serif;
+    font-family: 'San Francisco', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,26 +15,42 @@
 
 /* Apply the custom font */
 body {
-    background-color: #fff;
+    background-color: #f5f7fa;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 20px;
-    font-family: 'CustomFont', Arial, sans-serif;
+    font-family: 'San Francisco', Arial, sans-serif;
 }
 
 .container {
-    max-width: 375px; /* Typical mobile width */
+    max-width: 360px;
     text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 /* Image Container */
 .image-container {
-    background-color: #e0e7ff; /* Light blue background */
-    border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-bottom: 10px solid #d4e4ff;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.image-container::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/image/person_with_lap.png") no-repeat center;
+    background-size: cover;
 }
 
 .image-container img {
@@ -43,7 +61,7 @@ body {
 
 /* Content Section */
 .content {
-    padding: 0 20px;
+    padding: 20px;
 }
 
 /* Title */
@@ -55,6 +73,13 @@ h1 {
 
 h1 .highlight {
     color: #4b5efa; /* Blue color for "Spentrack" */
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 /* Profile Images */
@@ -71,6 +96,40 @@ h1 .highlight {
     border-radius: 50%;
     margin-right: -10px; /* Overlap effect */
     border: 2px solid #fff;
+}
+
+.profile-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-icons img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-left: -10px;
+    border: 2px solid white;
+}
+
+.profile-icons img:first-child {
+    margin-left: 0;
+}
+
+.profile-icons .more {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e0e7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    margin-left: -10px;
+    border: 2px solid white;
 }
 
 .profile-images .more-profiles {
@@ -91,6 +150,30 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 25px;
+}
+
+.tagline {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.tagline span {
+    font-weight: 700;
+}
+
+.tagline .spending {
+    color: #ff6f61;
+}
+
+.tagline .budget {
+    color: #4caf50;
+}
+
+.tagline .grow {
+    color: #ff9800;
 }
 
 .highlight-orange {
@@ -117,6 +200,25 @@ p {
     width: 100%;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.cta-button {
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cta-button:hover {
+    background-color: #1565c0;
 }
 
 .get-started-btn:hover {

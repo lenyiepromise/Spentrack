@@ -4,124 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spentrack System</title>
-    <style>
-        @font-face {
-            font-family: 'San Francisco';
-            src: url('/font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
-            font-weight: bold;
-            font-style: normal;
-        }
-
-        body {
-            font-family: 'San Francisco', Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f5f7fa;
-        }
-        .container {
-            text-align: center;
-            max-width: 360px;
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        .image-container {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            background-color: white;
-            border-bottom: 10px solid #d4e4ff;
-            border-radius: 15px 15px 0 0;
-            overflow: hidden;
-        }
-        .image-container::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: url('/img/person_with_lap.png') no-repeat center;
-            background-size: cover;
-        }
-        .content {
-            padding: 20px;
-        }
-        .heading {
-            font-size: 22px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 15px;
-        }
-        .profile-icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        .profile-icons img {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            margin-left: -10px;
-            border: 2px solid white;
-        }
-        .profile-icons img:first-child {
-            margin-left: 0;
-        }
-        .profile-icons .more {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background-color: #e0e7ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            font-weight: 600;
-            color: #666;
-            margin-left: -10px;
-            border: 2px solid white;
-        }
-        .tagline {
-            font-size: 16px;
-            font-weight: 400;
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.4;
-        }
-        .tagline span {
-            font-weight: 700;
-        }
-        .tagline .spending {
-            color: #ff6f61;
-        }
-        .tagline .budget {
-            color: #4caf50;
-        }
-        .tagline .grow {
-            color: #ff9800;
-        }
-        .cta-button {
-            background-color: #1e88e5;
-            color: white;
-            padding: 12px 0;
-            border: none;
-            border-radius: 25px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            display: block;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .cta-button:hover {
-            background-color: #1565c0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -129,10 +12,10 @@
         <div class="content">
             <h1 class="heading">The Spentrack System</h1>
             <div class="profile-icons">
-                <img src="/img/profile1.jpg" alt="Profile 1">
-                <img src="/img/profile2.jpg" alt="Profile 2">
-                <img src="/img/profile3.jpg" alt="Profile 3">
-                <img src="/img/profile4.jpg" alt="Profile 4">
+                <img src="/image/profile1.jpg" alt="Profile 1">
+                <img src="/image/profile2.jpg" alt="Profile 2">
+                <img src="/image/profile3.jpg" alt="Profile 3">
+                <img src="/image/profile4.jpg" alt="Profile 4">
                 <div class="more">+8</div>
             </div>
             <p class="tagline">
