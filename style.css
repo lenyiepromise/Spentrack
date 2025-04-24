@@ -561,7 +561,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     color: #333;
-    margin-right: 100px;
+    margin-right: 10px;
 }
 
 .daily-metric .change {
@@ -660,56 +660,4 @@ body {
     font-size: 12px;
     font-weight: 400;
     color: #333;
-}
-
-/* General Icon Styling */
-.material-icons {
-    font-size: 24px; /* Default size for icons */
-    color: #333; /* Default color for icons */
-    vertical-align: middle; /* Align icons with text */
-}
-
-/* Menu Icon */
-.menu-icon i {
-    font-size: 24px;
-    color: #333;
-}
-
-/* Bell Icon */
-.bell-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    background-color: #666;
-    border-radius: 50%;
-}
-
-.bell-icon i {
-    font-size: 18px;
-    color: #fff;
-}
-
-.bell-icon .badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: #1e88e5;
-    color: #fff;
-    font-size: 10px;
-    font-weight: 600;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Profile Icon */
-.profile-pic i {
-    font-size: 40px;
-    color: #666;
 }
