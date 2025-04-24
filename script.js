@@ -10,6 +10,7 @@ function loadPage(page) {
         })
         .then((html) => {
             container.innerHTML = html;
+            initializePage(); // Reinitialize event listeners after loading new content
         })
         .catch((error) => {
             console.error('Error loading page:', error);
@@ -27,7 +28,7 @@ document.addEventListener('click', (event) => {
 });
 
 // Preload pages for offline use
-const pages = ['signup.html', 'signin.html', 'index.html'];
+const pages = ['signup.html', 'signin.html', 'index.html', 'dashboard.html'];
 pages.forEach((page) => {
     fetch(page).catch((error) => console.error(`Failed to preload ${page}:`, error));
 });
@@ -39,3 +40,27 @@ if ('serviceWorker' in navigator) {
         .then(() => console.log('Service Worker registered successfully.'))
         .catch((error) => console.error('Service Worker registration failed:', error));
 }
+
+// Initialize page-specific functionality
+function initializePage() {
+    // Example: Add interactivity to the dashboard
+    const filterDropdown = document.querySelector('.filter');
+    if (filterDropdown) {
+        filterDropdown.addEventListener('click', () => {
+            alert('Filter dropdown clicked!');
+        });
+    }
+
+    const navTabs = document.querySelectorAll('.nav-tabs a');
+    navTabs.forEach((tab) => {
+        tab.addEventListener('click', (event) => {
+            event.preventDefault();
+            navTabs.forEach((t) => t.classList.remove('active'));
+            tab.classList.add('active');
+            alert(`Navigated to ${tab.textContent}`);
+        });
+    });
+}
+
+// Call initializePage on initial load
+initializePage();
