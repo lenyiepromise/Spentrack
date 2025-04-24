@@ -6,7 +6,13 @@
 }
 
 * {
-    font-family: 'San Francisco', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    margin: 0;
+    padding: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,13 +21,24 @@
 
 /* Apply the custom font */
 body {
-    background-color: #f5f7fa;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 20px;
     font-family: 'San Francisco', Arial, sans-serif;
+}
+
+/* Login Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
 }
 
 .container {
@@ -31,6 +48,139 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    height: 48px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.input-field::placeholder {
+    color: #666;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .input-field {
+    padding-right: 40px;
+}
+
+.password-container .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1e88e5;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.forgot-password:hover {
+    color: #1565c0;
+}
+
+.cta-button {
+    background-color: #043968;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px; /* Square edges for consistency */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.cta-button:hover {
+    background-color: #1565c0;
+}
+
+.secondary-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.secondary-link .sign-in {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+.secondary-link .sign-in:hover {
+    color: #1565c0;
+}
+
+.google-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.google-signup img {
+    width: 27px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-signup:hover {
+    background-color: #f5f5f5;
 }
 
 /* Image Container */
@@ -73,13 +223,6 @@ h1 {
 
 h1 .highlight {
     color: #4b5efa; /* Blue color for "Spentrack" */
-}
-
-.heading {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 15px;
 }
 
 /* Profile Images */
@@ -202,25 +345,6 @@ p {
     transition: background-color 0.3s;
 }
 
-.cta-button {
-    background-color: #1e88e5;
-    color: white;
-    padding: 12px 0;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.cta-button:hover {
-    background-color: #1565c0;
-}
-
 .get-started-btn:hover {
     background-color: #3b4cca;
 }
@@ -245,4 +369,154 @@ p {
 .lightgreen-layer {
     background-color: #d4f8e8; /* Light green */
     bottom: 0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 360px;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    height: 48px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.input-field::placeholder {
+    color: #666;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .input-field {
+    padding-right: 40px;
+}
+
+.password-container .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #b0b0b0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1e88e5;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.forgot-password:hover {
+    color: #1565c0;
+}
+
+.cta-button {
+    background-color: #1e88e5;
+    color: #ffffff;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px; /* Square edges for consistency */
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #1565c0;
+}
+
+.secondary-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.secondary-link .sign-up {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+.secondary-link .sign-up:hover {
+    color: #1565c0;
+}
+
+.google-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.google-signin img {
+    width: 27px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-signin:hover {
+    background-color: #f5f5f5;
 }
