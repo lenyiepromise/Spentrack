@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'San Frnancisco';
+    src: url('./font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype'),
+            url('./font/FontsFree-Net-SFProDisplay-Medium.ttf') format('truetype'),
+            url('./font/FontsFree-Net-SFProDisplay-Bold.ttf') format('truetype');
+}
+
+* {
+    font-family: 'San Frnancisco', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply the custom font */
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    font-family: 'CustomFont', Arial, sans-serif;
+}
+
+.container {
+    max-width: 375px; /* Typical mobile width */
+    text-align: center;
+}
+
+/* Image Container */
+.image-container {
+    background-color: #e0e7ff; /* Light blue background */
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Content Section */
+.content {
+    padding: 0 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 .highlight {
+    color: #4b5efa; /* Blue color for "Spentrack" */
+}
+
+/* Profile Images */
+.profile-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-images img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -10px; /* Overlap effect */
+    border: 2px solid #fff;
+}
+
+.profile-images .more-profiles {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e7ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #4b5efa;
+    border: 2px solid #fff;
+}
+
+/* Description */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.highlight-orange {
+    color: #ff6f61; /* Orange for "top of your spending" */
+}
+
+.highlight-pink {
+    color: #ff4d7d; /* Pink for "budget better" */
+}
+
+.highlight-green {
+    color: #34c759; /* Green for "grow your savings" */
+}
+
+/* Get Started Button */
+.get-started-btn {
+    background-color: #4b5efa;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #3b4cca;
+}
