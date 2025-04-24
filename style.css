@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'San Frnancisco';
-    src: url('./font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype'),
-            url('./font/FontsFree-Net-SFProDisplay-Medium.ttf') format('truetype'),
-            url('./font/FontsFree-Net-SFProDisplay-Bold.ttf') format('truetype');
+    src: url('./font/FontsFree-Net-SFProDisplay-Regular.ttf') format('truetype');
 }
 
 * {
@@ -123,4 +121,26 @@ p {
 
 .get-started-btn:hover {
     background-color: #3b4cca;
+}
+
+.layer-container {
+    position: relative;
+    height: 100px; /* Adjust height as needed */
+    margin-bottom: 20px;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 50%; /* Each layer takes half the height of the container */
+}
+
+.lightblue-layer {
+    background-color: #e0e7ff; /* Light blue */
+    top: 0;
+}
+
+.lightgreen-layer {
+    background-color: #d4f8e8; /* Light green */
+    bottom: 0;
 }
